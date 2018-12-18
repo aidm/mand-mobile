@@ -4,6 +4,7 @@
       ref="tabs"
       :titles="titles"
       show-ink-bar
+      default-index="1"
     >
       <div v-for="(title, index) of titles" :key="index">
         {{title}}的内容
@@ -12,7 +13,8 @@
   </div>
 </template>
 
-<script>import {Tabs} from 'mand-mobile'
+<script>
+import {Tabs} from 'mand-mobile'
 
 export default {
   name: 'tab-bar-demo',
@@ -34,4 +36,5 @@ export default {
     }
   },
 }
-</script>
+
+</script>
